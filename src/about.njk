@@ -3,9 +3,14 @@ title: Page for you
 layout: base.njk
 ---
 
+<a href="/">Home</a>
+<a href="/about">about</a>
 
 <div class="container">
    <h1>About page</h1>
    <div class="vibe">complitly different</div>
 </div>
-<script src="/js/vibe.js"></script>
+
+{% for item in news %}
+   <a href="/{{item.country}}">{{ item.country }}</a>
+{% endfor %}

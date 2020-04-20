@@ -1,7 +1,14 @@
 --- 
 title: Page for you 
 layout: base.njk
+pagination:
+   data: news
+   size: 1
+   alias: news
+permalink: /{{news.country}}/index.html
 ---
+<a href="/">Home</a>
+<a href="/about">about</a>
 
 <div class="container">
    <h1>This is page for you</h1>
