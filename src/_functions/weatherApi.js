@@ -1,7 +1,4 @@
 const axios = require("axios");
-require('dotenv').config();
-const countries = require("./countries.json")
-
 
 exports.handler = async function(event, context, callback){
    const {lat, lon} = event.queryStringParameters
