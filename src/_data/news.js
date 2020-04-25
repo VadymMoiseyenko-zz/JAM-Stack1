@@ -11,7 +11,8 @@ const countries = require("./countries.json")
          articles: response.data.articles,
       }
    } catch(e){
-      console.log("wow");
+      console.log(e);
+      return {}
    }
 }
 
