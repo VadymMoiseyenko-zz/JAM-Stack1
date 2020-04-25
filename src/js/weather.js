@@ -1,8 +1,6 @@
 
 function success(pos) {
-   console.log("wwwow");
-   const API_KEY_WEATHER = "d81536572123ab28912df2352407bbb7";
-   const url = `/.netlify/functions/weatherApi?lat=${pos.coords.latitude}&lon=${pos.coords.longitude}&units=metric`
+   const url = `/.netlify/functions/weatherapi?lat=${pos.coords.latitude}&lon=${pos.coords.longitude}&units=metric`
    console.log(url);
    fetch(url)
    .then(response => response.json())
